@@ -68,7 +68,7 @@ menu = [{
 table_state0 = 'being free'
 table_state1 = 'waiting to make a order'
 table_state2 = 'waiting for the order to be served'
-
+table_state3 = 'waiting to be free'
 tables_list = [{
     "id": 1,
     "state": table_state0,
@@ -144,7 +144,7 @@ class Waiter(threading.Thread):
             order = orders.get()
             orders.task_done()
             table_id = next((i for i, table in enumerate(tables_list) if table['id'] == order['table_id']), None)
-            print(f'{threading.current_thread().name} has taken the order with Id: {order["id"]} | priority: {order["priority"]} | items: {order["items"]} from table {order["table_id"]}')
+            print(f'{threading.current_thread().name} has taken the order with Id: {order["id"]} | priority: {order["priority"]} | items: {order["items"]} ')
             tables_list[table_id]['state'] = table_state2
             payload = dict({
                 'order_id': order['id'],
@@ -171,7 +171,7 @@ class Waiter(threading.Thread):
             # update table state
             table_id = next((i for i, table in enumerate(tables_list) if table['id'] == desired_order['table_id']),
                             None)
-            tables_list[table_id]['state'] = table_state0
+            tables_list[table_id]['state'] = table_state3
             order_serving_timestamp = int(time.time())
             order_pick_up_timestamp= int(desired_order['time_start'])
             # calculate total order time
@@ -254,10 +254,11 @@ class Costumers(threading.Thread):
 
         else:
             time.sleep(random.randint(2, 10) * time_unit)
-            idxs = [table for table in tables_list if table['state'] == table_state0]
-            if len(idxs):
+            idxs = [table for table in tables_list if table['state'] == table_state3]
+            if int(len(idxs))>1:
                 rand_idx = random.randrange(len(idxs))
                 tables_list[rand_idx]['state'] = table_state0
+
 
 
 def run_dinninghall_server():
