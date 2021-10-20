@@ -1,4 +1,4 @@
-# Lab 1 70% work
+# Lab 1 submission
 
 import queue
 import random
@@ -111,7 +111,6 @@ orders_bundle = []
 orders_done = []
 order_rating = []
 
-
 app = Flask(__name__)
 threads = []
 
@@ -119,7 +118,7 @@ threads = []
 @app.route('/distribution', methods=['POST'])
 def distribution():
     order = request.get_json()
-    print(f'Received order from kitchen. Order ID: {order["order_id"]}')
+    print(f'Received order from kitchen. Order ID: {order["order_id"]} items: {order["items"]} ')
     table_id = next((i for i, table in enumerate(tables_list) if table['id'] == order['table_id']), None)
     tables_list[table_id]['state'] = table_state2
     # get the waiter thread and serve order
@@ -144,7 +143,8 @@ class Waiter(threading.Thread):
             order = orders.get()
             orders.task_done()
             table_id = next((i for i, table in enumerate(tables_list) if table['id'] == order['table_id']), None)
-            print(f'{threading.current_thread().name} has taken the order with Id: {order["id"]} | priority: {order["priority"]} | items: {order["items"]} ')
+            print(
+                f'{threading.current_thread().name} has taken the order with Id: {order["id"]} | priority: {order["priority"]} | items: {order["items"]} ')
             tables_list[table_id]['state'] = table_state2
             payload = dict({
                 'order_id': order['id'],
@@ -173,9 +173,9 @@ class Waiter(threading.Thread):
                             None)
             tables_list[table_id]['state'] = table_state3
             order_serving_timestamp = int(time.time())
-            order_pick_up_timestamp= int(desired_order['time_start'])
+            order_pick_up_timestamp = int(desired_order['time_start'])
             # calculate total order time
-            Order_total_preparing_time = order_serving_timestamp-order_pick_up_timestamp
+            Order_total_preparing_time = order_serving_timestamp - order_pick_up_timestamp
 
             # calculate nr of start
             order_stars = {'order_id': desired_order['order_id']}
@@ -196,19 +196,20 @@ class Waiter(threading.Thread):
             sum_stars = sum(feedback['star'] for feedback in order_rating)
             avg = float(sum_stars / len(order_rating))
 
-            served_order = {**desired_order, 'Serving_time': Order_total_preparing_time, 'status': 'DONE', 'Stars_feedback':order_stars}
+            served_order = {**desired_order, 'Serving_time': Order_total_preparing_time, 'status': 'DONE',
+                            'Stars_feedback': order_stars}
             orders_done.append(served_order)
             # add to see the rating
-            print( f'Serving the order Endpoint: /distribution :\n'
-                      f'Order Id: {served_order["order_id"]}\n'
-                      f'Waiter Id: {served_order["waiter_id"]}\n'
-                      f'Table Id: {served_order["table_id"]}\n'
-                      f'Items: {served_order["items"]}\n'
-                      f'Priority: {served_order["priority"]}\n'
-                      f'Max Wait: {served_order["max_wait"]}\n'
-                      f'Waiting time: {served_order["Serving_time"]}\n'
-                      f'Stars: {served_order["Stars_feedback"]}\n'
-                      f'Restaurant rating: {avg}')
+            print(f'Serving the order Endpoint: /distribution :\n'
+                  f'Order Id: {served_order["order_id"]}\n'
+                  f'Waiter Id: {served_order["waiter_id"]}\n'
+                  f'Table Id: {served_order["table_id"]}\n'
+                  f'Items: {served_order["items"]}\n'
+                  f'Priority: {served_order["priority"]}\n'
+                  f'Max Wait: {served_order["max_wait"]}\n'
+                  f'Waiting time: {served_order["Serving_time"]}\n'
+                  f'Stars: {served_order["Stars_feedback"]}\n'
+                  f'Restaurant rating: {avg}')
 
         else:
             raise Exception(
@@ -247,6 +248,7 @@ class Costumers(threading.Thread):
 
             }
             orders.put(neworder)
+            # orders_bundle to verify the order after receiving it from kitchen
             orders_bundle.append(neworder)
 
             tables_list[table_id]['state'] = table_state1
@@ -254,15 +256,16 @@ class Costumers(threading.Thread):
 
         else:
             time.sleep(random.randint(2, 10) * time_unit)
-            idxs = [table for table in tables_list if table['state'] == table_state3]
-            if int(len(idxs))>1:
-                rand_idx = random.randrange(len(idxs))
-                tables_list[rand_idx]['state'] = table_state0
+            (table_id, table) = next(
+                ((idx, table) for idx, table in enumerate(tables_list) if table['state'] == table_state3), (None, None))
+            if table_id is not None:
+                tables_list[table_id]['state'] = table_state0
 
 
 
 def run_dinninghall_server():
-    main_thread = threading.Thread(target=lambda: app.run(host='0.0.0.0', port=3000, debug=False, use_reloader=False),daemon=True)
+    main_thread = threading.Thread(target=lambda: app.run(host='0.0.0.0', port=3000, debug=False, use_reloader=False),
+                                   daemon=True)
     threads.append(main_thread)
     costumer_thread = Costumers()
     threads.append(costumer_thread)

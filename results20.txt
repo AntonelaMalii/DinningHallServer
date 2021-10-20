@@ -1,0 +1,445 @@
+Iura has taken the order with Id: 4425525 | priority: 4 | items: [6, 4, 6]
+Irina has taken the order with Id: 23578592 | priority: 2 | items: [5, 8, 9, 2, 7]
+Alexandra has taken the order with Id: 7961712 | priority: 2 | items: [9, 9, 10, 5, 7]
+Alexei has taken the order with Id: 39759632 | priority: 4 | items: [9]
+Iura has taken the order with Id: 47258272 | priority: 2 | items: [5]
+127.0.0.1 - - [20/Oct/2021 02:45:02] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 39759632 items: [9]
+Serving the order Endpoint: /distribution :
+Order Id: 39759632
+Waiter Id: 4
+Table Id: 4
+Items: [9]
+Priority: -4
+Max Wait: 19.5
+Waiting time: 18
+Stars: {'order_id': 39759632, 'star': 5}
+Restaurant rating: 5.0
+Irina has taken the order with Id: 64840149 | priority: 2 | items: [9, 5, 1, 4, 2]
+Received order from kitchen. Order ID: 4425525 items: [6, 4, 6]
+Serving the order Endpoint: /distribution :
+Order Id: 4425525
+Waiter Id: 1
+Table Id: 1
+Items: [4, 6, 6]
+Priority: -4
+Max Wait: 41.6
+Waiting time: 37
+Stars: {'order_id': 4425525, 'star': 5}
+Restaurant rating: 5.0
+127.0.0.1 - - [20/Oct/2021 02:45:18] "POST /distribution HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2021 02:45:21] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 23578592 items: [5, 8, 9, 2, 7]
+Serving the order Endpoint: /distribution :
+Order Id: 23578592
+Waiter Id: 2
+Table Id: 2
+Items: [2, 5, 7, 8, 9]
+Priority: -2
+Max Wait: 45.5
+Waiting time: 39
+Stars: {'order_id': 23578592, 'star': 5}
+Restaurant rating: 5.0
+Alexei has taken the order with Id: 4103568 | priority: 2 | items: [9, 6, 6]
+Alexandra has taken the order with Id: 19316718 | priority: 2 | items: [4, 4]
+127.0.0.1 - - [20/Oct/2021 02:45:42] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 4103568 items: [9, 6, 6]
+Serving the order Endpoint: /distribution :
+Order Id: 4103568
+Waiter Id: 4
+Table Id: 1
+Items: [6, 6, 9]
+Priority: -2
+Max Wait: 19.5
+Waiting time: 18
+Stars: {'order_id': 4103568, 'star': 5}
+Restaurant rating: 5.0
+Iura has taken the order with Id: 8632488 | priority: 2 | items: [5]
+Received order from kitchen. Order ID: 19316718 items: [4, 4]
+Serving the order Endpoint: /distribution :
+Order Id: 19316718
+Waiter Id: 3
+Table Id: 2
+Items: [4, 4]
+Priority: -2
+Max Wait: 41.6
+Waiting time: 36
+Stars: {'order_id': 19316718, 'star': 5}
+Restaurant rating: 5.0
+127.0.0.1 - - [20/Oct/2021 02:46:09] "POST /distribution HTTP/1.1" 200 -
+Irina has taken the order with Id: 15204352 | priority: 1 | items: [2, 9]
+Received order from kitchen. Order ID: 8632488 items: [5]
+Serving the order Endpoint: /distribution :
+Order Id: 8632488
+Waiter Id: 1
+Table Id: 1
+Items: [5]
+Priority: -2
+Max Wait: 45.5
+Waiting time: 40
+Stars: {'order_id': 8632488, 'star': 5}
+Restaurant rating: 5.0
+127.0.0.1 - - [20/Oct/2021 02:46:24] "POST /distribution HTTP/1.1" 200 -
+Alexei has taken the order with Id: 24552090 | priority: 4 | items: [4, 6, 7, 7, 4]
+127.0.0.1 - - [20/Oct/2021 02:46:29] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 15204352 items: [2, 9]
+Serving the order Endpoint: /distribution :
+Order Id: 15204352
+Waiter Id: 2
+Table Id: 2
+Items: [2, 9]
+Priority: -1
+Max Wait: 19.5
+Waiting time: 19
+Stars: {'order_id': 15204352, 'star': 5}
+Restaurant rating: 5.0
+Alexandra has taken the order with Id: 9746967 | priority: 1 | items: [6, 5, 9, 1]
+127.0.0.1 - - [20/Oct/2021 02:47:05] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 24552090 items: [4, 6, 7, 7, 4]
+Serving the order Endpoint: /distribution :
+Order Id: 24552090
+Waiter Id: 4
+Table Id: 1
+Items: [4, 4, 6, 7, 7]
+Priority: -4
+Max Wait: 41.6
+Waiting time: 38
+Stars: {'order_id': 24552090, 'star': 5}
+Restaurant rating: 5.0
+Iura has taken the order with Id: 28586250 | priority: 1 | items: [9, 5, 5]
+Received order from kitchen. Order ID: 9746967 items: [6, 5, 9, 1]
+Serving the order Endpoint: /distribution :
+Order Id: 9746967
+Waiter Id: 3
+Table Id: 2
+Items: [1, 5, 6, 9]
+Priority: -1
+Max Wait: 45.5
+Waiting time: 38
+Stars: {'order_id': 9746967, 'star': 5}
+Restaurant rating: 5.0
+127.0.0.1 - - [20/Oct/2021 02:47:13] "POST /distribution HTTP/1.1" 200 -
+Irina has taken the order with Id: 30392992 | priority: 1 | items: [1, 2]
+127.0.0.1 - - [20/Oct/2021 02:47:44] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 30392992 items: [1, 2]
+Serving the order Endpoint: /distribution :
+Order Id: 30392992
+Waiter Id: 2
+Table Id: 2
+Items: [1, 2]
+Priority: -1
+Max Wait: 26.0
+Waiting time: 25
+Stars: {'order_id': 30392992, 'star': 5}
+Restaurant rating: 5.0
+Alexei has taken the order with Id: 24807396 | priority: 4 | items: [8]
+Received order from kitchen. Order ID: 28586250 items: [9, 5, 5]
+Serving the order Endpoint: /distribution :
+Order Id: 28586250
+Waiter Id: 1
+Table Id: 1
+Items: [5, 5, 9]
+Priority: -1
+Max Wait: 45.5
+Waiting time: 43
+Stars: {'order_id': 28586250, 'star': 5}
+Restaurant rating: 5.0
+127.0.0.1 - - [20/Oct/2021 02:47:55] "POST /distribution HTTP/1.1" 200 -
+Alexandra has taken the order with Id: 39275871 | priority: 5 | items: [7, 4, 6, 10, 6]
+127.0.0.1 - - [20/Oct/2021 02:48:21] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 24807396 items: [8]
+Serving the order Endpoint: /distribution :
+Order Id: 24807396
+Waiter Id: 4
+Table Id: 2
+Items: [8]
+Priority: -4
+Max Wait: 39.0
+Waiting time: 34
+Stars: {'order_id': 24807396, 'star': 5}
+Restaurant rating: 5.0
+Iura has taken the order with Id: 31947209 | priority: 2 | items: [8, 10, 6, 10]
+127.0.0.1 - - [20/Oct/2021 02:48:41] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 39275871 items: [7, 4, 6, 10, 6]
+Serving the order Endpoint: /distribution :
+Order Id: 39275871
+Waiter Id: 3
+Table Id: 1
+Items: [4, 6, 6, 7, 10]
+Priority: -5
+Max Wait: 41.6
+Waiting time: 39
+Stars: {'order_id': 39275871, 'star': 5}
+Restaurant rating: 5.0
+Irina has taken the order with Id: 42904806 | priority: 2 | items: [1, 9]
+127.0.0.1 - - [20/Oct/2021 02:49:00] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 31947209 items: [8, 10, 6, 10]
+Serving the order Endpoint: /distribution :
+Order Id: 31947209
+Waiter Id: 1
+Table Id: 2
+Items: [6, 8, 10, 10]
+Priority: -2
+Max Wait: 39.0
+Waiting time: 33
+Stars: {'order_id': 31947209, 'star': 5}
+Restaurant rating: 5.0
+Alexei has taken the order with Id: 7913720 | priority: 1 | items: [10]
+127.0.0.1 - - [20/Oct/2021 02:49:08] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 42904806 items: [1, 9]
+Serving the order Endpoint: /distribution :
+Order Id: 42904806
+Waiter Id: 2
+Table Id: 1
+Items: [1, 9]
+Priority: -2
+Max Wait: 26.0
+Waiting time: 23
+Stars: {'order_id': 42904806, 'star': 5}
+Restaurant rating: 5.0
+Alexandra has taken the order with Id: 19110141 | priority: 5 | items: [6, 7, 4, 4]
+Received order from kitchen. Order ID: 7913720 items: [10]
+Serving the order Endpoint: /distribution :
+Order Id: 7913720
+Waiter Id: 4
+Table Id: 2
+Items: [10]
+Priority: -1
+Max Wait: 19.5
+Waiting time: 21
+Stars: {'order_id': 7913720, 'star': 4}
+Restaurant rating: 4.9375
+127.0.0.1 - - [20/Oct/2021 02:49:22] "POST /distribution HTTP/1.1" 200 -
+Iura has taken the order with Id: 5183448 | priority: 3 | items: [5]
+127.0.0.1 - - [20/Oct/2021 02:49:50] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 19110141 items: [6, 7, 4, 4]
+Serving the order Endpoint: /distribution :
+Order Id: 19110141
+Waiter Id: 3
+Table Id: 1
+Items: [4, 4, 6, 7]
+Priority: -5
+Max Wait: 41.6
+Waiting time: 37
+Stars: {'order_id': 19110141, 'star': 5}
+Restaurant rating: 4.9411764705882355
+Irina has taken the order with Id: 66303360 | priority: 2 | items: [2, 9, 1, 10]
+127.0.0.1 - - [20/Oct/2021 02:50:05] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 5183448 items: [5]
+Serving the order Endpoint: /distribution :
+Order Id: 5183448
+Waiter Id: 1
+Table Id: 2
+Items: [5]
+Priority: -3
+Max Wait: 45.5
+Waiting time: 40
+Stars: {'order_id': 5183448, 'star': 5}
+Restaurant rating: 4.944444444444445
+Alexei has taken the order with Id: 58236802 | priority: 4 | items: [4]
+127.0.0.1 - - [20/Oct/2021 02:50:21] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 66303360 items: [2, 9, 1, 10]
+Serving the order Endpoint: /distribution :
+Order Id: 66303360
+Waiter Id: 2
+Table Id: 1
+Items: [1, 2, 9, 10]
+Priority: -2
+Max Wait: 26.0
+Waiting time: 25
+Stars: {'order_id': 66303360, 'star': 5}
+Restaurant rating: 4.947368421052632
+Alexandra has taken the order with Id: 32021271 | priority: 4 | items: [4, 6]
+127.0.0.1 - - [20/Oct/2021 02:50:45] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 58236802 items: [4]
+Serving the order Endpoint: /distribution :
+Order Id: 58236802
+Waiter Id: 4
+Table Id: 2
+Items: [4]
+Priority: -4
+Max Wait: 41.6
+Waiting time: 36
+Stars: {'order_id': 58236802, 'star': 5}
+Restaurant rating: 4.95
+Iura has taken the order with Id: 522636 | priority: 4 | items: [7, 6]
+127.0.0.1 - - [20/Oct/2021 02:51:06] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 32021271 items: [4, 6]
+Serving the order Endpoint: /distribution :
+Order Id: 32021271
+Waiter Id: 3
+Table Id: 1
+Items: [4, 6]
+Priority: -4
+Max Wait: 41.6
+Waiting time: 35
+Stars: {'order_id': 32021271, 'star': 5}
+Restaurant rating: 4.9523809523809526
+Irina has taken the order with Id: 4163638 | priority: 2 | items: [10]
+127.0.0.1 - - [20/Oct/2021 02:51:09] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 522636 items: [7, 6]
+Serving the order Endpoint: /distribution :
+Order Id: 522636
+Waiter Id: 1
+Table Id: 2
+Items: [6, 7]
+Priority: -4
+Max Wait: 26.0
+Waiting time: 23
+Stars: {'order_id': 522636, 'star': 5}
+Restaurant rating: 4.954545454545454
+Alexei has taken the order with Id: 28132080 | priority: 3 | items: [7, 1]
+127.0.0.1 - - [20/Oct/2021 02:51:31] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 4163638 items: [10]
+Serving the order Endpoint: /distribution :
+Order Id: 4163638
+Waiter Id: 2
+Table Id: 1
+Items: [10]
+Priority: -2
+Max Wait: 19.5
+Waiting time: 24
+Stars: {'order_id': 4163638, 'star': 2}
+Restaurant rating: 4.826086956521739
+Alexandra has taken the order with Id: 24532016 | priority: 4 | items: [7, 1, 4, 8]
+127.0.0.1 - - [20/Oct/2021 02:51:39] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 28132080 items: [7, 1]
+Serving the order Endpoint: /distribution :
+Order Id: 28132080
+Waiter Id: 4
+Table Id: 2
+Items: [1, 7]
+Priority: -3
+Max Wait: 26.0
+Waiting time: 23
+Stars: {'order_id': 28132080, 'star': 5}
+Restaurant rating: 4.833333333333333
+Iura has taken the order with Id: 30245640 | priority: 4 | items: [5, 2]
+127.0.0.1 - - [20/Oct/2021 02:52:12] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 24532016 items: [7, 1, 4, 8]
+Serving the order Endpoint: /distribution :
+Order Id: 24532016
+Waiter Id: 3
+Table Id: 1
+Items: [1, 4, 7, 8]
+Priority: -4
+Max Wait: 41.6
+Waiting time: 37
+Stars: {'order_id': 24532016, 'star': 5}
+Restaurant rating: 4.84
+Irina has taken the order with Id: 46635248 | priority: 4 | items: [6, 1, 8, 7]
+127.0.0.1 - - [20/Oct/2021 02:52:26] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 30245640 items: [5, 2]
+Serving the order Endpoint: /distribution :
+Order Id: 30245640
+Waiter Id: 1
+Table Id: 2
+Items: [2, 5]
+Priority: -4
+Max Wait: 45.5
+Waiting time: 38
+Stars: {'order_id': 30245640, 'star': 5}
+Restaurant rating: 4.846153846153846
+Alexei has taken the order with Id: 719661 | priority: 5 | items: [2, 4]
+127.0.0.1 - - [20/Oct/2021 02:52:53] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 46635248 items: [6, 1, 8, 7]
+Serving the order Endpoint: /distribution :
+Order Id: 46635248
+Waiter Id: 2
+Table Id: 1
+Items: [1, 6, 7, 8]
+Priority: -4
+Max Wait: 39.0
+Waiting time: 35
+Stars: {'order_id': 46635248, 'star': 5}
+Restaurant rating: 4.851851851851852
+Alexandra has taken the order with Id: 81581588 | priority: 2 | items: [2, 9, 1, 1]
+127.0.0.1 - - [20/Oct/2021 02:53:07] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 719661 items: [2, 4]
+Serving the order Endpoint: /distribution :
+Order Id: 719661
+Waiter Id: 4
+Table Id: 2
+Items: [2, 4]
+Priority: -5
+Max Wait: 41.6
+Waiting time: 36
+Stars: {'order_id': 719661, 'star': 5}
+Restaurant rating: 4.857142857142857
+Iura has taken the order with Id: 10330148 | priority: 5 | items: [9, 2, 6, 7, 10]
+127.0.0.1 - - [20/Oct/2021 02:53:22] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 81581588 items: [2, 9, 1, 1]
+Serving the order Endpoint: /distribution :
+Order Id: 81581588
+Waiter Id: 3
+Table Id: 1
+Items: [1, 1, 2, 9]
+Priority: -2
+Max Wait: 26.0
+Waiting time: 26
+Stars: {'order_id': 81581588, 'star': 4}
+Restaurant rating: 4.827586206896552
+Irina has taken the order with Id: 29532570 | priority: 2 | items: [8, 4, 6, 7]
+127.0.0.1 - - [20/Oct/2021 02:53:47] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 10330148 items: [9, 2, 6, 7, 10]
+Serving the order Endpoint: /distribution :
+Order Id: 10330148
+Waiter Id: 1
+Table Id: 2
+Items: [2, 6, 7, 9, 10]
+Priority: -5
+Max Wait: 26.0
+Waiting time: 31
+Stars: {'order_id': 10330148, 'star': 3}
+Restaurant rating: 4.766666666666667
+Alexei has taken the order with Id: 36723502 | priority: 2 | items: [10]
+Received order from kitchen. Order ID: 29532570 items: [8, 4, 6, 7]
+Serving the order Endpoint: /distribution :
+Order Id: 29532570
+Waiter Id: 2
+Table Id: 1
+Items: [4, 6, 7, 8]
+Priority: -2
+Max Wait: 41.6
+Waiting time: 36
+Stars: {'order_id': 29532570, 'star': 5}
+Restaurant rating: 4.774193548387097
+127.0.0.1 - - [20/Oct/2021 02:54:03] "POST /distribution HTTP/1.1" 200 -
+Alexandra has taken the order with Id: 14761017 | priority: 3 | items: [5, 8, 8, 7]
+127.0.0.1 - - [20/Oct/2021 02:54:18] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 36723502 items: [10]
+Serving the order Endpoint: /distribution :
+Order Id: 36723502
+Waiter Id: 4
+Table Id: 2
+Items: [10]
+Priority: -2
+Max Wait: 19.5
+Waiting time: 24
+Stars: {'order_id': 36723502, 'star': 2}
+Restaurant rating: 4.6875
+Iura has taken the order with Id: 26133840 | priority: 2 | items: [7, 1, 10]
+127.0.0.1 - - [20/Oct/2021 02:54:43] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 14761017 items: [5, 8, 8, 7]
+Serving the order Endpoint: /distribution :
+Order Id: 14761017
+Waiter Id: 3
+Table Id: 1
+Items: [5, 7, 8, 8]
+Priority: -3
+Max Wait: 45.5
+Waiting time: 38
+Stars: {'order_id': 14761017, 'star': 5}
+Restaurant rating: 4.696969696969697
+127.0.0.1 - - [20/Oct/2021 02:54:46] "POST /distribution HTTP/1.1" 200 -
+Received order from kitchen. Order ID: 26133840 items: [7, 1, 10]
+Serving the order Endpoint: /distribution :
+Order Id: 26133840
+Waiter Id: 1
+Table Id: 2
+Items: [1, 7, 10]
+Priority: -2
+Max Wait: 26.0
+Waiting time: 23
+Stars: {'order_id': 26133840, 'star': 5}
+Restaurant rating: 4.705882352941177
